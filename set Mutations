@@ -1,0 +1,16 @@
+a=int(input())
+H=set(map(int,input().split()))
+n=int(input())
+for _ in range(n):
+    f=input()
+    R=set(map(int,input().split()))
+    if f[0]=="i":
+        H.intersection_update(R)
+    elif f[0]=="u":
+        H.update(R)
+    elif f[0]=='d':
+        H.difference_update(R)
+    else:
+        H.symmetric_difference_update(R)
+print(sum(H))
+       
