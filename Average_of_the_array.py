@@ -1,4 +1,4 @@
 n=int(input())
-m=list(map(int,input().split()))
-avg=(sum(m)/len(m))
-print("%.2f"%avg)
+lst = list(map(int,input().split()))
+avg=sum(lst) / len(lst)
+print("%0.2f"%avg)
